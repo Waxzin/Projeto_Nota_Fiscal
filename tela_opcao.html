@@ -1,8 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>waxzin - fusc</title>
-    <link rel="stylesheet" href="/css/opcao.css">
+    <title>Painel - Nota Fiscal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/opcao.css">
 </head>
+<body class="pagina-opcao">
+    <main class="tela">
+        <h1 class="titulo">O que deseja gerenciar?</h1>
+        <p class="subtitulo">Escolha uma das opções abaixo para visualizar ou editar os registros no sistema.</p>
+
+        <nav class="opcoes" aria-label="Opções de gerenciamento">
+
+            <a class="opcao" href="./tela_cliente.html">
+                <span class="icone" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+                </span>
+                <span class="texto">
+                    <strong>Cliente</strong>
+                    <small>Gerencie cadastros, contatos e dados dos clientes</small>
+                </span>
+                <span class="seta" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+                </span>
+            </a>
+
+            <a class="opcao" href="./tela_produto.html">
+                <span class="icone" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></svg>
+                </span>
+                <span class="texto">
+                    <strong>Produto</strong>
+                    <small>Controle o inventário, preços e especificações</small>
+                </span>
+                <span class="seta" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+                </span>
+            </a>
+
+            <a class="opcao" href="./tela_nota.html">
+                <span class="icone" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></svg>
+                </span>
+                <span class="texto">
+                    <strong>Nota</strong>
+                    <small>Emita e acompanhe notas fiscais e faturamentos</small>
+                </span>
+                <span class="seta" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+                </span>
+            </a>
+
+            <a class="opcao" href="./tela_item_nota.html">
+                <span class="icone" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01"/></svg>
+                </span>
+                <span class="texto">
+                    <strong>Item da Nota</strong>
+                    <small>Associe produtos, quantidades e valores às notas</small>
+                </span>
+                <span class="seta" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>
+                </span>
+            </a>
+
+        </nav>
+
+        <p class="rodape">Deseja sair do painel? <a href="./tela_login.html">Fazer logout</a></p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* ===== Tela de opções (painel) ===== */
+
+/* nesta tela não há cartão: o conteúdo fica direto sobre o fundo claro */
+.pagina-opcao { background: var(--card); }
+
+.pagina-opcao .tela {
+    max-width: 440px;
+    padding: 24px 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.pagina-opcao .titulo { font-size: clamp(1.8rem, 6vw, 2.2rem); }
+.pagina-opcao .subtitulo { max-width: 34ch; }
+
+/* ---------- lista de opções ---------- */
+.opcoes { display: flex; flex-direction: column; gap: 12px; }
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+    min-height: 64px;
+    background: var(--campo);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    color: var(--texto);
+    font-weight: 400;
+    transition: border-color .2s, background .2s, transform .15s;
+}
+
+.opcao:hover,
+.opcao:focus-visible {
+    text-decoration: none;
+    background: #fff;
+    border-color: var(--destaque);
+    transform: translateY(-1px);
+}
+
+/* círculo do ícone */
+.opcao .icone {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ebe2db;
+}
+
+.opcao .icone svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: var(--texto);
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* texto */
+.opcao .texto { display: flex; flex-direction: column; flex: 1; min-width: 0; gap: 2px; }
+.opcao strong { font-size: .9rem; font-weight: 600; }
+.opcao small { font-size: .75rem; color: var(--texto-suave); }
+
+/* círculo da seta */
+.opcao .seta {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #f3dcd3;
+}
+
+.opcao .seta svg {
+    width: 12px;
+    height: 12px;
+    fill: none;
+    stroke: var(--destaque);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* link de logout em negrito e sublinhado, como no design */
+.pagina-opcao .rodape a { font-weight: 600; text-decoration: underline; }
+
+/* ---------- responsivo ---------- */
+@media (max-width: 480px) {
+    .pagina-opcao .tela { padding: 40px 20px; }
+}
+
+@media (min-width: 768px) {
+    .pagina-opcao .tela { max-width: 480px; }
+}
