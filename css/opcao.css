@@ -1,6 +1,16 @@
-/* ===== Tela de opções (painel) ===== */
 
-/* nesta tela não há cartão: o conteúdo fica direto sobre o fundo claro */
+:root {
+    --bg: #f6f5f4;
+    --card: #fdfcfa;
+    --campo: #f5f0eb;
+    --texto: #2b2622;
+    --texto-suave: #7a716a;
+    --destaque: #c96f55;
+    --destaque-escuro: #b25d44;
+    --borda: #ece6e0;
+    --raio: 6px;
+}
+
 .pagina-opcao { background: var(--card); }
 
 .pagina-opcao .tela {
