@@ -20,7 +20,7 @@
   --transition: 150ms ease;
 }
 
-/* ---------- Reset básico ---------- */
+
 *,
 *::before,
 *::after {
@@ -43,7 +43,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ---------- Layout da página ---------- */
+
 .login {
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@ body {
   max-width: var(--card-width);
 }
 
-/* ---------- Cabeçalho ---------- */
+
 .login__title {
   margin: 0 0 12px;
   font-family: var(--font-display);
@@ -74,7 +74,7 @@ body {
   color: var(--color-muted);
 }
 
-/* ---------- Formulário ---------- */
+
 .form {
   display: flex;
   flex-direction: column;
@@ -103,7 +103,7 @@ body {
   margin-bottom: 8px;
 }
 
-/* ---------- Campos de texto ---------- */
+
 .input {
   position: relative;
 }
@@ -144,7 +144,6 @@ body {
   opacity: 0.7;
 }
 
-/* Ícone dentro do campo (desenhado via CSS com máscara SVG) */
 .input::before {
   content: "";
   position: absolute;
@@ -164,17 +163,16 @@ body {
   background-color: var(--color-accent);
 }
 
-/* Ícone de e-mail */
+
 .input--email {
   --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2.5' y='4.5' width='19' height='15' rx='2.5'/%3E%3Cpath d='m3 7 9 6.5L21 7'/%3E%3C/svg%3E");
 }
 
-/* Ícone de cadeado */
 .input--lock {
   --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='10.5' width='16' height='10.5' rx='2.5'/%3E%3Cpath d='M8 10.5V7.5a4 4 0 0 1 8 0v3'/%3E%3C/svg%3E");
 }
 
-/* ---------- Checkbox ---------- */
+
 .check {
   display: inline-flex;
   align-items: center;
@@ -224,7 +222,7 @@ body {
   color: var(--color-muted);
 }
 
-/* ---------- Botão principal ---------- */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -268,7 +266,7 @@ body {
   cursor: not-allowed;
 }
 
-/* ---------- Links ---------- */
+
 .link {
   color: var(--color-accent);
   font-weight: 500;
@@ -293,7 +291,7 @@ body {
   white-space: nowrap;
 }
 
-/* ---------- Rodapé ---------- */
+
 .login__footer {
   margin: 40px 0 0;
   font-size: 13px;
@@ -305,7 +303,6 @@ body {
   margin-left: 4px;
 }
 
-/* ---------- Responsivo ---------- */
 @media (max-width: 480px) {
   .login {
     align-items: flex-start;
@@ -317,7 +314,6 @@ body {
   }
 }
 
-/* ---------- Movimento reduzido ---------- */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
